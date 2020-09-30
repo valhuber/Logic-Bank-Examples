@@ -1,10 +1,10 @@
-This project is a complement to [python-rules](https://github.com/valhuber/python-rules),
+This project is a complement to [logic-bank](https://github.com/valhuber/logic-bank),
 which explains the concepts of rules, as well being used for 
-development of `python-rules`.
+development of `logic-bank`.
 
 Here we focus on the practicalities of installation and configuration,
 with 2 (unrelated) samples:
-* `nw` (same as in [python-rules](https://github.com/valhuber/python-rules))
+* `nw` (same as in [logic-bank](https://github.com/valhuber/logic-bank))
 * `banking`
 
 This page shows the common install / configure tasks common to both.
@@ -13,7 +13,7 @@ which is optional but recommended since it makes it really
 easy to explore your database.
 
 
-## Installing `python-rules-examples`
+## Installing `logic-bank-examples`
 You can install this pre-configured example
 as described below.
 
@@ -37,9 +37,9 @@ Issues?  [Try here](https://github.com/valhuber/fab-quick-start/wiki/Mac-Python-
 
 Using your IDE or command line: 
 ```
-# fork https://github.com/valhuber/python-rules-examples.git -> yourname
-git clone https://github.com/yourname/python-rules-examples.git
-cd python-rules-examples
+# fork https://github.com/valhuber/logic-bank-examples.git -> yourname
+git clone https://github.com/yourname/logic-bank-examples.git
+cd logic-bank-examples
 virtualenv venv
 source venv/bin/activate
 (venv)$ pip install -r requirements.txt
@@ -78,7 +78,7 @@ virtualenv venv
 # windows .env\Scripts\activate
 source venv/bin/activate
 
-(venv)$ pip install -i https://test.pypi.org/simple/ python-rules
+(venv)$ pip install -i https://test.pypi.org/simple/ logic-bank
 (venv)$ pip install SQLAlchemy
 (venv)$ pip install sqlacodegen
 
@@ -89,7 +89,7 @@ source venv/bin/activate
 ```
 
 #### Creating a New Project
-We'll recreate the `python-rules-examles`.
+We'll recreate the `logic-bank-examples`.
 We'll follow the same structure to make things definite,
 so you can compare.
 Of course, use whatever structure you like,
@@ -124,7 +124,7 @@ The first parameter identifies your database location;
 consult the sqlacodegen documentation.
 
 ##### Important notes about models - mind the relationships
-Both `python-rules` and `fab-quickstart` depend on
+Both `logic-bank` and `fab-quickstart` depend on
 relationships.  Ideally, they exist in your database,
 in which as `sqlcodegen` will find them.  If that's
 not practical, SQLAlchemy also lets to define them in your models:
