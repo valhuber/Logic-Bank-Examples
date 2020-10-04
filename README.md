@@ -41,6 +41,7 @@ Using your IDE or command line:
 git clone https://github.com/yourname/logic-bank-examples.git
 cd logic-bank-examples
 virtualenv venv
+# windows: .\venv\Scripts\activate
 source venv/bin/activate
 (venv)$ pip install -r requirements.txt
 ```
