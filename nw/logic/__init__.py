@@ -96,13 +96,8 @@ if do_engine_logging:
 basedir = os.path.abspath(os.path.dirname(__file__))
 basedir = os.path.dirname(basedir)
 
-print("\n****************\n"
-      "  IMPORTANT - create database.db from database-gold.db in " + basedir + "/nw/db/" +
-      "\n****************")
-
 nw_loc = os.path.join(basedir, "db/database.db")
 nw_source = os.path.join(basedir, "db/database-gold.db")
-copyfile(src=nw_source, dst=nw_loc)
 
 conn_string = "sqlite:///" + nw_loc
 engine = sqlalchemy.create_engine(conn_string, echo=False)  # sqlalchemy sqls...
