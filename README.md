@@ -59,6 +59,7 @@ that depict logic execution and chaining:
 You can also run the pre-created fab application:
 ```
 (venv)$ cd ../../nw_app
+(venv)$ #  windows set FLASK_APP=app
 (venv)$ export FLASK_APP=app
 (venv)$ flask run
 ```
