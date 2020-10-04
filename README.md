@@ -281,4 +281,4 @@ Start your browser [here](http://127.0.0.1:5000/).
 
 ## Status
 
-`nw` running, `banking` under development
+`nw` running, `banking` running for funds_transfer
